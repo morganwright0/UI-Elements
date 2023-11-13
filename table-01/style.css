@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+#table-container {
+  overflow-x: auto;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#data-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+    text-align: left;
+    background-color: white;
+}
+
+#data-table th, #data-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #dee2e6;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+#data-table td {
+
+}
+
+
+#data-table th:nth-child(1),
+#data-table td:nth-child(1) {
+  width: 30%;
+}
+#data-table th:nth-child(2),
+#data-table td:nth-child(2) {
+  width: 20%;
+}
+#data-table th:nth-child(3),
+#data-table td:nth-child(3) {
+  width: 50%;
+}
+
+#data-table thead {
+  background-color: #e9ecef;
+}
+
+#data-table th {
+  padding: 15px 20px;
+  border-bottom: 3px solid #dee2e6;
+  font-weight: 600;
+  color: #495057;
+}
+
+#data-table td {
+  padding: 15px 20px;
+  border-top: 1px solid #dee2e6;
+  overflow-x: auto;
+}
+
+#data-table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+  #table-container {
+    overflow-x: scroll;
+  }
+}
+
+
+#pagination {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#pagination button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #c0c4c8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#pagination button:hover {
+  background-color: #a5a9ac;
+}
+
+.sort-asc,
+.sort-desc {
+  color: black;
+  cursor: pointer;
+}
+
+.active-sort {
+  color: blue;
+}
+
+.active {
+  background-color: #666666;
+}
